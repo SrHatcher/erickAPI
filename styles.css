@@ -1,0 +1,91 @@
+/* 
+1-posicionamiento
+2-Modelo de caja (box-model)
+3-tipografia
+4-visuales
+5-otros
+*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-size: 1.6rem;
+    
+    background: linear-gradient(180deg, #0A0C14 0%, rgba(24, 33, 45, 0.62) 100%);
+}   
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 80%;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 15px;
+
+    background-color: #1C2125;
+    font-family: 'Righteous', 'comic sans';
+    color: white;
+    box-shadow: 0px 2px 10px 0.5px #090a0c ;
+}
+
+header .logo-title{
+    font-size: 32px;
+}
+
+header ul{
+    display: flex;
+    gap: 14px;
+
+    padding: 0;
+
+}
+
+header ul li{
+    list-style: none;
+    padding: 13px 10px;
+    border-radius: 8px;
+}
+
+header ul li:nth-child(1){
+
+    background-color: #6D00F8;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35%;
+    height: 75%;
+    margin: auto 0;
+    border-radius: 10px;
+
+    background-color: #273139;
+}
+
+header div p{
+    width: 90%;
+}
+
+header div img{
+    width: 5%;
+}
+
+
+main{
+
+}
