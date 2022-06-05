@@ -5,15 +5,18 @@
 4-visuales
 5-otros
 */
+:root{
+    --main-font: 'Righteous', 'comic sans';
+    --secondary-font: 'Poppins', sans-serif;
+}
+
 
 html{
     font-size: 62.5%;
 }
 
 body{
-    display: flex;
-    justify-content: center;
-
+    position: relative;
     width: 100vw;
     height: 100vh;
     padding: 0;
@@ -22,17 +25,21 @@ body{
 
     font-size: 1.6rem;
     
+    
     background: linear-gradient(180deg, #0A0C14 0%, rgba(24, 33, 45, 0.62) 100%);
+    background-attachment: fixed;
 }   
 
 .nav-container{
+    position: absolute;
+    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: calc(50% - 550px);
 
     width: 1095px;
     height: 60px;
-    margin-top: 20px;
     border-radius: 15px;
     background: rgb(109,0,248);
     background: linear-gradient(126deg, rgba(109,0,248,0.8197478820629814) 0%, rgba(89,27,124,0.5788515235195641) 50%, rgba(78,18,94,1) 100%); 
@@ -105,4 +112,71 @@ header div img{
 
 main{
 
+}
+
+.presentacion{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+}
+
+.presentacion .presentacion-nombre p{
+    margin: 0;
+}
+
+.presentacion-nombre{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-family: var(--secondary-font);
+    color: white;
+}
+
+.saludo{
+    font-family: var(--main-font);
+    font-size: 80px;
+}
+
+.presentacion-nombre div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: 500px;
+}
+
+.presentacion-datos{
+    width: 40%;
+    display: flex;
+    
+    align-items: center;
+}
+
+.cuadro-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    background: rgb(109,0,248);
+    background: linear-gradient(126deg, rgba(109,0,248,0.8197478820629814) 0%, rgba(89,27,124,0.5788515235195641) 50%, rgba(78,18,94,1) 100%); 
+}
+
+.cuadro-info div{
+    width: 348px;
+    height: 448px;
+    background-color: #1C2125;
+    border-radius: 15px;
+}
+
+.segunda-presentacion{
+    width: 100vw;
+    height: 100vh;
 }
