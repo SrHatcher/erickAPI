@@ -21,8 +21,6 @@ html{
 
 body{
     position: relative;
-    width: 100vw;
-    height: 100vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -32,25 +30,25 @@ body{
     
     background: linear-gradient(180deg, #0A0C14 0%, rgba(24, 33, 45, 0.62) 100%);
     background-attachment: fixed;
-}  
+}   
 
-.nav-container{
+header{
     position: absolute;
     top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: calc(50% - 550px);
+    margin-left: calc(50% - 547px);
 
     width: 1095px;
     height: 60px;
     border-radius: 15px;
     background: rgb(109,0,248);
     background: linear-gradient(126deg, rgba(109,0,248,0.8197478820629814) 0%, rgba(89,27,124,0.5788515235195641) 50%, rgba(78,18,94,1) 100%); 
-
+    z-index: 1;
 }
 
-header{
+nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -64,11 +62,11 @@ header{
     color: white;
 }
 
-header .logo-title{
+nav .logo-title{
     font-size: 24px;
 }
 
-header ul{
+nav ul{
     display: flex;
     gap: 14px;
 
@@ -76,7 +74,7 @@ header ul{
 
 }
 
-header ul a{
+nav ul a{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
@@ -87,7 +85,7 @@ header ul a{
     color: #ABABAB;
 }
 
-header ul a:nth-child(2){
+nav ul a:nth-child(2){
     color: white;
     background-color: #6D00F8;
 }
@@ -105,16 +103,25 @@ header ul a:nth-child(2){
     background-color: #273139;
 }
 
-header div p{
+nav div p{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     width: 90%;
 }
 
-header div img{
+nav div img{
     width: 5%;
 }
 
+.nav-item{
+    transition: color 0.2s;
+}
+
+.nav-item:hover{
+    color: #eeeeee;
+}
+
+/*inicio del cogido de esta pagina*/
 
 main{
     width: 100%;
@@ -149,12 +156,19 @@ section .recomendacion{
     height: 100%;
 }
 
+.centrador{
+    width: 1095px;
+    height: 100%;
+    display: flex;
+}
+
 
 footer{
     display: flex;
     width: 100%;
     height: 270px;
     background-color: var(--secondary-color);
+    justify-content: center;
 }
 
 footer div{
@@ -163,7 +177,6 @@ footer div{
 
 footer div h2{
     font-family: var(--main-font);
-    margin-left: 100px;
     margin-top: 30px;
     color: white;
 }
@@ -176,7 +189,6 @@ footer .informacion-personal{
 
     width: 450px;
     height: auto;
-    margin-left: 100px;
 
 }
 
@@ -198,7 +210,6 @@ footer .contactos p{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 100px;
 }
 
 .contactos a{
@@ -208,7 +219,6 @@ footer .contactos p{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 100px;
 
 }
 

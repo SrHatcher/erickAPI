@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="nav-container">
-        <header>
+    <header>
+        <nav>
             <p class="logo-title">Project E</p>
             <div class="buscador">
                     <p>Buscar...</p>
@@ -25,13 +25,14 @@
             </div>
             <a href=""></a>
             <ul>
-                <a href="./index.html">Vista General</a>
-                <a href="./entradas.html">Ingresar Datos</a>
-                <a href="#">Categorias</a>
-                <a href="#">Informacion</a>
+                <a href="./index.html" class="nav-item">Vista General</a>
+                <a href="./entradas.html" >Ingresar Datos</a>
+                <a href="#" class="nav-item">Categorias</a>
+                <a href="#" class="nav-item">Informacion</a>
             </ul>
-        </header>
-    </div>
+        </nav>
+    </header>
+
     <main>
 
         <section>
@@ -59,30 +60,33 @@
         </section>
 
     </main>
+    
     <footer>
-        <div>
-            <h2>Informacion Personal</h2>
-            <div class="informacion-personal">
-                Me quiero dedicar al desarrollo frontend y conseguir un trabajo en la industria tech. Esta pagina es una muestra de mis habilidades, tanto escribiendo codigo como haciendo diseño de interfaces/diseño gráfico.<br><br>
-
-                La informacion en esta pagina es ficticia. No forman parte de ningun proyecto real, o almenos no por ahora.
+        <div class="centrador">
+            <div>
+                <h2>Informacion Personal</h2>
+                <div class="informacion-personal">
+                    Me quiero dedicar al desarrollo frontend y conseguir un trabajo en la industria tech. Esta pagina es una muestra de mis habilidades, tanto escribiendo codigo como haciendo diseño de interfaces/diseño gráfico.<br><br>
+    
+                    La informacion en esta pagina es ficticia. Todo es inventado por mi para crear una pagina.
+                </div>
             </div>
-        </div>
-        <div>
-            <h2>Contacto</h2>
-            <div class="contactos">
-                <div>
-                    <img src="img/telefono.svg" alt="">
-                    <p>9987-1641</p>
+            <div>
+                <h2>Contacto</h2>
+                <div class="contactos">
+                    <div>
+                        <img src="img/telefono.svg" alt="">
+                        <p>9987-1641</p>
+                    </div>
+                    <div>
+                        <img src="img/gmail.png" alt="">
+                        <p>erickomaldonado11@gmail.com</p>
+                    </div>
+                    <a href="https://github.com/SrHatcher" target="_blank">
+                        <img src="img/github.svg" alt="">
+                        <p>SrHatcher</p>
+                    </a>
                 </div>
-                <div>
-                    <img src="img/gmail.png" alt="">
-                    <p>erickomaldonado11@gmail.com</p>
-                </div>
-                <a href="https://github.com/SrHatcher" target="_blank">
-                    <img src="img/github.svg" alt="">
-                    <p>SrHatcher</p>
-                </a>
             </div>
         </div>
     </footer>
