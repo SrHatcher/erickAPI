@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick's API</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
@@ -16,8 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="nav-container">
-        <header>
+
+
+    <header>
+        <nav>
             <p class="logo-title">Project E</p>
             <div class="buscador">
                     <p>Buscar...</p>
@@ -25,52 +27,58 @@
             </div>
             <a href=""></a>
             <ul>
-                <a href="./index.html">Vista General</a>
-                <a href="./entradas.html">Ingresar Datos</a>
-                <a href="#">Categorias</a>
-                <a href="#">Informacion</a>
+                <a href="./index.html" >Vista General</a>
+                <a href="./entradas.html" class="nav-item">Ingresar Datos</a>
+                <a href="#" class="nav-item">Categorias</a>
+                <a href="#" class="nav-item">Informacion</a>
             </ul>
-        </header>
-    </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la pagina -->
     <main>
-        <section class="presentacion">
-            <div class="presentacion-nombre">
-                <div>
-                    <p class="saludo">
-                        Bienvenido, <br>Erick
-                    </p>
-                    <p>
-                        Una API creada por mi para almacenar toda la informacion que adquiera, categorizarla y consultarla en cualquier momento.
-                    </p>
+
+        <section class="centrado">
+            <section class="presentacion">
+                <div class="presentacion-nombre">
+                    <div>
+                        <p class="saludo">
+                            Bienvenido, <br>Erick
+                        </p>
+                        <p>
+                            Una API creada por mi para almacenar toda la informacion que adquiera, categorizarla y consultarla en cualquier momento.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="arbol"></div>
-            <div class="arbol2"></div>
-            <div class="presentacion-datos">
-                <div class="cuadro-info-borde">
-                    <div class="cuadro-info">
-                        <div class="titulo-info">
-                            <p>Ultimas entradas</p>
-                        </div>
-                        <div class="entradas-nuevas">
-                            <div class="caja-entrada">
-                                <h4>curiosidades de nichijou</h4>
-                                <p>En un video se mostraron 40 curiosidades de la serie Nichijou, estas son...</p>
+                <div class="arbol"></div>
+                <div class="arbol2"></div>
+                <div class="presentacion-datos">
+                    <div class="cuadro-info-borde">
+                        <div class="cuadro-info">
+                            <div class="titulo-info">
+                                <p>Ultimas entradas</p>
                             </div>
-                            <div class="caja-entrada">
-                                <h4>Lista de animes terminados actualizada</h4>
-                                <p>Se ha añadido un nuevo anime a la lista de espera en animes por ver...</p>
-                            </div>
-                            <div class="caja-entrada">
-                                <h4>lista de juegos terminados actualizada</h4>
-                                <p>Se ha añadido un nuevo anime a la lista de espera en animes por ver...</p>
+                            <div class="entradas-nuevas">
+                                <div class="caja-entrada">
+                                    <h4>curiosidades de nichijou</h4>
+                                    <p>En un video se mostraron 40 curiosidades de la serie Nichijou, estas son...</p>
+                                </div>
+                                <div class="caja-entrada">
+                                    <h4>Lista de animes terminados actualizada</h4>
+                                    <p>Se ha añadido un nuevo anime a la lista de espera en animes por ver...</p>
+                                </div>
+                                <div class="caja-entrada">
+                                    <h4>lista de juegos terminados actualizada</h4>
+                                    <p>Se ha añadido un nuevo anime a la lista de espera en animes por ver...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
         </section>
+
+
         <section class="segunda-presentacion">
             <div class="texto-segunda-presentacion">
                 <div>
@@ -93,7 +101,11 @@
                 
             </div>
         </section>
+
     </main>
+
+    <!-- seccion del pie de pagina-->
+
     <footer>
         <div>
             <h2>Informacion Personal</h2>
